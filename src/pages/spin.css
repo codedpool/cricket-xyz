@@ -1,0 +1,227 @@
+.Spin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.wheel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid #333;
+  position: relative;
+  transition: transform 3s ease-out;
+  transform-origin: center center;
+}
+
+.segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #ffd700;
+  text-align: center;
+  line-height: 150px;
+  border: 2px solid #000;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transform-origin: 100% 100%;
+  z-index: 1;
+}
+
+.segment:nth-child(1) {
+  transform: rotate(0deg);
+}
+.segment:nth-child(2) {
+  transform: rotate(45deg);
+}
+.segment:nth-child(3) {
+  transform: rotate(90deg);
+}
+.segment:nth-child(4) {
+  transform: rotate(135deg);
+}
+.segment:nth-child(5) {
+  transform: rotate(180deg);
+}
+.segment:nth-child(6) {
+  transform: rotate(225deg);
+}
+.segment:nth-child(7) {
+  transform: rotate(270deg);
+}
+.segment:nth-child(8) {
+  transform: rotate(315deg);
+}
+
+.timer-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.stopwatch {
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.stopwatch-display {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stopwatch-hours,
+.stopwatch-minutes,
+.stopwatch-seconds {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.btn {
+  height: 100px;
+  width: 250px;
+  background-color: orange;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn2 {
+  height: 50px;
+  width: 210px;
+  background-color: rgb(229, 180, 88);
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn, .btn2 {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover, .btn2:hover {
+  background-color: darkorange;
+  transform: scale(1.05);
+}
+
+.prize-display {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; 
+  margin-top: 50px;
+}
+
+/* Quiz Styles */
+.container {
+  text-align: center;
+  font-size: 18px;
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.quiz-complete {
+  text-align: center;
+  font-size: 24px;
+  color: green;
+  margin-top: 20px;
+}
+
+.box-question {
+  border: 2px solid #333;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.box-question ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.box-question ul li {
+  margin-bottom: 10px;
+}
+
+.box-question p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.spin-container {
+  position: relative; 
+}
+
+.logo-container {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  z-index: 10; 
+}
+
+.logo {
+  max-width: 100px; 
+  height: auto; 
+}
+.confetti-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
